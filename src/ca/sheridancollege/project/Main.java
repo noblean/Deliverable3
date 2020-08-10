@@ -28,9 +28,9 @@ public class Main
       WarCardDeck tempDeck = new WarCardDeck();
 
       // Create and split the main deck
-      mainDeck.generateMainDeck(mainDeck.getDeck());
-      mainDeck.shuffle();
-      mainDeck.splitDeck(mainDeck, p1Deck, p2Deck);
+      mainDeck.generateMainDeck(mainDeck.getDeck()); // create the deck
+      mainDeck.shuffle(); // shuffle the deck
+      mainDeck.splitDeck(mainDeck, p1Deck, p2Deck); // split the deck into 2 decks
 
       // Set up decks for the war game
       game1.setP1Deck(p1Deck);
@@ -69,7 +69,7 @@ public class Main
 
 
       //-------------- Loop through game to see who wins ----------
-      for (int i = 0; i < 350; i++) {
+      while (!game1.getGameOver()) {
          game1.play();
          p1Deck.shuffle();
          p2Deck.shuffle();
