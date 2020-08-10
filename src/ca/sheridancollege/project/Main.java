@@ -69,7 +69,7 @@ public class Main
 
 
       //-------------- Loop through game to see who wins ----------
-      while (!game1.getGameOver()) {
+      while (!game1.isGameOver()) {
          game1.play();
          p1Deck.shuffle();
          p2Deck.shuffle();

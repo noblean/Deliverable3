@@ -129,7 +129,7 @@ public class War extends Game
     *
     * @return if the game is over
     */
-   public boolean getGameOver ()
+   public boolean isGameOver ()
    {
       return this.gameOver;
    }
