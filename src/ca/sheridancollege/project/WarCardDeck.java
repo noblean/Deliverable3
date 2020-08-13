@@ -8,10 +8,11 @@ import java.util.Collections;
  * @modifier Angela Noble, 2020
  * @modifier Man Shi, 2020
  */
-public class WarCardDeck
+public class WarCardDeck extends GroupOfCards
 {
    private ArrayList<WarCard> deck;
    private int size;
+
 
    public WarCardDeck ()
    {
